@@ -8,4 +8,4 @@ my_list = [
     ["C++", "Bjarne Stroustrup", 1985],
     ["C#", " Anders Hejlsberg", 2000]
 ]
-print(tabulate(my_list, headers=['STT','ggfgf','jhvffh','udyvdhwhw'], showindex='always', numalign='right'))
+print(tabulate(my_list, headers=['STT','Ngôn ngữ','Họ và tên','Năm sinh'], showindex='always', numalign='right'))
