@@ -196,6 +196,9 @@ def KhacHaiVaBa(num:int):
 def KhacHaiVaNam(num:int):
     return num % 2 != 0 and num %5 != 0
 
+def Collatz(x:int):
+    return x // 2 if  x % 2 == 0 else 3*x+1
+
 def DaoNguocChuoi():
     print("\nCâu 12a: Các số lẻ không chia hết cho 5 là: ", list(filter(KhacHaiVaNam, my_list)))
 
@@ -213,6 +216,7 @@ def DaoNguocChuoi():
     daychan = [i for i in my_list if (i%2==0 and i!=0)]
     daychan_le= dayle+ [0]*(my_list.count(0))+ daychan
     print('\nDãy theo kiểu số lẻ xếp trước, chẵn nằm sau, số 0 ở giữa là: {}'.format(daychan_le))
+    print('\nCác số Collatz trong dãy gồm: ', list(set(filter(Collatz, my_list))))
 
 def SoLanXuatHien():
     num = int(input("\nNhập phần tử cần kiểm tra: "))
