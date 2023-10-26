@@ -1,0 +1,26 @@
+Cách đơn giản
+roomType = int(input("Nhập số loại phòng "))
+    numberOfDays = int(input("Nhập số đêm thuê: "))
+    totalPrice = 0
+
+    if roomType == 1:
+        totalPrice = 1260 * numberOfDays
+    elif roomType == 2:
+        totalPrice = 1550 * numberOfDays
+    elif roomType == 3 or roomType == 4:
+        totalPrice = 1830 * numberOfDays
+    elif roomType == 5 or roomType == 6:
+        totalPrice = 2120 * numberOfDays
+    elif roomType == 7:
+        totalPrice = 2540 * numberOfDays
+    elif roomType == 8:
+        totalPrice = 4800 * numberOfDays
+    else:
+        print("Số loại phòng không hợp lệ.")
+        return 0
+
+    if numberOfDays == 2:
+        totalPrice *= 0.75
+
+    print("Tổng tiền thuê phòng là: %.2f" % totalPrice)
+    return 0
