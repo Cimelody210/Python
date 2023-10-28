@@ -6,16 +6,16 @@ data = pd.read_csv('Lab6\sales_data.csv')
 print(data.info())
 print(style.available)
 
-
 profist = data['total_profit'].tolist()
 month = data['month_number'].tolist()
+unit = data['total_units'].tolist()
 
 plt.style.use("Solarize_Light2")
-# plt.scatter(month, profist, edgecolors='green', linestyle='-')
-# plt.scatter(x, y, s=area, c=colors, alpha=0.5)
-
 plt.figure('abcd')
-plt.plot(month, profist)
+plt.plot(month, profist,'-.')
+plt.fill_between(month, unit, profist, color = 'red', alpha= 0.8)
+plt.plot(month, unit)
+
 plt.xlabel("Thang")
 plt.ylabel('Loi nhuan')
 plt.xticks(month)
