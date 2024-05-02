@@ -1,0 +1,73 @@
+from turtle import *
+from math import sin, cos, pi
+from time import perf_counter
+
+
+hideturte()
+pensize(5)
+speed(0)
+b = 3
+bgcolor('black')
+penup()
+backward(25)
+left(90)
+backward(200)
+speed(b)
+begin_fill()
+color('red')
+
+forward(500)
+right(90)
+forward(500)
+right(90)
+forward(360)
+end_fill()
+penup()
+speed(0)
+goto(x,y)
+begin_fill()
+
+color('yellow')
+right(90)
+left(72)
+speed(b)
+a= 80
+for i in range(4):
+    forward(a)
+    right(144)
+    forward(a)
+    left(72)
+forward(a)
+right(144)
+forward(a)
+end_fill()
+speed(0)
+penup()
+left(90)
+forward(400)
+right(90)
+backward(250)
+m,n.position()
+pendown()
+speed(b)
+forward(60)
+right(120)
+forward(60)
+left(120)
+circle(-50,120)
+speed(0)
+
+penup()
+goto(m,n)
+left(30)
+backward(100)
+speed(b)
+pendown()
+circle(75,360)
+penup()
+speed(0)
+backward(100)
+left(90)
+forward(60)
+
+
