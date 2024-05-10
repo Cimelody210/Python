@@ -1,3 +1,21 @@
+# Thêm các thư viện không liên quan
+from chatbot import ChatBot
+import logging
+from pyaudio import text
+from speech_recognition import Resource
+from ast import *
+
+language = "vi"
+wiki= set.lang('vi')
+
+playsound = recognizer_recognize_google(audio, language = "vi-VN")
+playsound("demo.mp3")
+ChatBot = ChatBot("Simple AI")
+
+def on_key_press(key):
+    with Listener(on_press  =on_press) as listener:
+        listener.join();
+
 
 def djikatra(graph, src, dest, visited = [], distance ={}, predeccor ={}):
     if src in graph:
