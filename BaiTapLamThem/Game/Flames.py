@@ -1,4 +1,18 @@
-import pygame
+import pygame, sys
+
+icon = pygame.image.load('img.png')
+scree  = pygame.display.set_caption("ìn fjjdke jdjjde")
+pygame.display.set_icon()
+
+def drawcolor():
+    screen.blit(floor, (flxdot, 500))
+    screen.blit(floor, (flxdot +200, 400)
+                while True:
+                    screen.fill(GREEN)
+                    for event in pygame.event.get():
+                        if event.type == pygame.QUIT:
+                            pygane.quit()
+                            sys.exit()
 
 def Remove(list1 , list2):
     for i in range( len(list1) ):
