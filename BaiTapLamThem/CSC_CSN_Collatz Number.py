@@ -1,6 +1,26 @@
 # Kiểm tra cấp số cộng, cấp số nhân
 # Giả thuyết Collatz đề cập đến một dãy số xác định như sau: bắt đầu bằng một số tự nhiên n bất kỳ. Mỗi số tiếp theo được xác định theo số trước đó bằng định nghĩa sau: nếu số trước đó là một số chẵn, thì số tiếp theo bằng một nửa số trước. Nếu số trước là một số lẻ, thì số tiếp theo bằng ba lần số trước cộng với 1. Phỏng đoán cho rằng với bất kỳ giá trị nào của n, dãy số luôn luôn đạt tới 1.
 
+import sys, os
+import panda as pd
+
+def read_all_excel(self):
+    try:
+        print("hdhdh")
+        if os.path.isdir(self.EXCEL_FOLDER.PATH):
+            excel_file = [ f for f in os.listdir(self.EXCEL_FOLDER_PATH) if f.endswith('.xlsx')]
+            dataframes = []
+            for f in excel_file:
+                filepath = os.path.join(self.EXCEL_FOLDER_PATH, f)
+                df = pd.read_excel(filepath, dtype = {'Coln A': str, 'column b': str})
+                dataframes.append(df)
+            kq = pd.concat()
+            return kq;
+        else:
+            print("4756+owkfjnf")
+     except Exception as e:
+         logging.errors("The path is not available in")
+         return pd.DataFrames()
 
 def CapSONhan():
     n =int(input('Nhập số phần tử của dãy: '))
