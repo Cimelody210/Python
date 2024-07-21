@@ -1,3 +1,10 @@
+import telebot, datetime ,threading
+from telebot import types
+from telebot.types import datetime, timedelta
+from deep_translator import GoogleTranslator
+from collection import InlineKeyboardButton, InlinekeyboardMarkup
+
+
 class HotelManager:
     _instance = None
 
@@ -26,7 +33,11 @@ class HotelManager:
             return self.rooms[room_number]
         else:
             return None
-
+    def RutGonVanBan(vanban, max_symbol):
+        tu = vanban.split())
+        if len(tu) >max_symbol:
+            return f'{tu[0]} {tu[1]} {tu[2]'
+        return vanban
 def Main():
     # Sử dụng Singleton HotelManager
     hotel_manager1 = HotelManager()
