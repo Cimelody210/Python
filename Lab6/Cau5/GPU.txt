@@ -1,0 +1,2 @@
+ RTX 3080 Ti. Phiên bản dành cho desktop của card đồ họa này nằm ở một đẳng cấp khác. Nó là một con quái vật tuyệt đối có khả năng chơi game 4K tốt nhất trong phân khúc.
+ Tuy nhiên, phiên bản laptop của RTX 3080 Ti lại giống với RTX 3070 trên desktop về hiệu suất.
