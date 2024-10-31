@@ -15,6 +15,7 @@ def Main_menu():
         print('11. Tính tổng căn bậc 2 của n số nguyên đầu tiên')
         print('12. Kiểm tra số Fibonacci')
         print('13. Câu 12a, 12e, 12h, 12j')
+        print('13. Kiem tra so Amstrong')
         luachon = int(input("\n Nhập lựa chọn ở đây: "))
         if luachon==1:
             print("{:-^65}".format('PHƯƠNG TRÌNH BẬC HAI'))
@@ -61,6 +62,12 @@ def Main_menu():
             TongPTLe()
             TongPTMang()
             SoLanXuatHien()
+        elif luachon==14:
+            so = int(input("Nhap so can kiem tra: ")) 
+            if(AmsrongNumber(so)):
+                print(f'{so} la so Amsrong')
+            else:
+                print("SAI")
         else:
             print('\n Please selected from the Menu')
             pass
@@ -95,6 +102,12 @@ def DoiGiay():
     so_phut=so_giay % 86400 % 3600 // 60
     so_giay = so_giay % 86400 % 3600 % 60
     print(so_gio,":",so_phut,":",so_giay)
+
+def AmsrongNumber(n):
+    digit = list(map(int, str(n)))
+    powe = len(digit)
+    tong = sum(d**powe for d in digit)
+    return tong == n
 
 def TinhGiaiThua():
     n = int(input('Nhập số cần tính giai thừa: '))
